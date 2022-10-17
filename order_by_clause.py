@@ -9,7 +9,7 @@ dataBase = mysql.connector.connect(
 
 cursor_object = dataBase.cursor()
 
-query = "SELECT * FROM students ORDER BY name"
+query = "SELECT * FROM students ORDER BY name DESC"
 cursor_object.execute(query)
 
 my_result = cursor_object.fetchall()
