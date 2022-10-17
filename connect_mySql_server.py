@@ -22,7 +22,7 @@ cursor_object = dataBase.cursor()
 
 
 # cursor_object.execute("CREATE TABLE students (name VARCHAR(255), age INTEGER(10))")
-# cursor_object.execute(student_record)
+# cursor_object.execute(students)
 
 # Disconnecting from the server
 # dataBase.close()
@@ -36,8 +36,10 @@ val = [("Nazim", 24),
 cursor_object.executemany(sql, val)
 dataBase.commit()
 
-# for db in cursor_object:
-#     print(db)
+
+cursor_object.execute("SHOW DATABASES")
+for db in cursor_object:
+    print(db)
 '''
 ('information_schema',)
 ('abc',)
