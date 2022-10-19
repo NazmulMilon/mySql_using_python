@@ -9,8 +9,8 @@ dataBase = mysql.connector.connect(
 )
 
 cursor_object = dataBase.cursor()
-
-query = "DELETE FROM students WHERE age='26'"
+query = "DELETE FROM teachers"
+# query = "DELETE FROM teachers WHERE id='NULL'"
 cursor_object.execute(query)
 
 dataBase.commit()
