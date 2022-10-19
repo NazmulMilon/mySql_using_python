@@ -13,7 +13,7 @@ Before installing MySQL 5.7.39 we have to delete all the packages and repositori
 
 >$ sudo apt-get update 
 
-At first, download mysql repository using this command,
+`#At first, download mysql repository using this command` ,
 >$  wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
 
 After downloaded mysql repository, install this repository,
