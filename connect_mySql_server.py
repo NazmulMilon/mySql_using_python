@@ -29,14 +29,14 @@ cursor_object = dataBase.cursor()
 # Disconnecting from the server
 # dataBase.close()
 
-# sql = "INSERT INTO teachers (name, id, age, salary) \
-#     VALUES (%s, %s, %s, %s)"
-# val = [("Nazim", 111, 25, 30000),
-#        ("Hasan", 112, 26, 35000),
-#        ("Milon", 113, 27, 39000),
-#        ("Sarker", 114, 28, 50000)]
-# cursor_object.executemany(sql, val)
-# dataBase.commit()
+sql = "INSERT INTO teachers (name, id, age, salary) \
+    VALUES (%s, %s, %s, %s)"
+val = [("Rupol Ahmed", 115, 29, 30000),
+       ("Rupol Hasan", 116, 30, 35000),
+       ("Milon Sarker", 117, 31, 39000),
+       ("Sarker Sarker", 118, 32, 50000)]
+cursor_object.executemany(sql, val)
+dataBase.commit()
 
 
 cursor_object.execute("SHOW DATABASES")
