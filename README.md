@@ -5,7 +5,7 @@
 
 Before installing MySQL 5.7.39 we have to delete all the packages and repositories, for deleting write these commands, 
 
->$sudo apt-get purge mysql\* libmysql\*
+>$ sudo apt-get purge mysql\* libmysql\*
 
 >$ sudo apt-get clean
  
