@@ -1,3 +1,5 @@
+
+
 # importing required libraries
 import mysql.connector
 
@@ -14,20 +16,15 @@ dataBase = mysql.connector.connect(
 
 # preparing a cursor object
 cursor_object = dataBase.cursor()
+# query = "UPDATE students SET section='B' where id=11;"
+query = "UPDATE students SET section='B' where age=23;"
+cursor_object.execute(query)
 
-<<<<<<< HEAD
-cursor_object.execute("CREATE TABLE teachers (name VARCHAR(255), id INTEGER(10), age INTEGER(10), salary INTEGER(10))")
-
-# cursor_object.execute("SHOW TABLES")
-# for db in cursor_object:
-#     print(db)
-=======
-cursor_object.execute("CREATE TABLE students (id INTEGER(10), name VARCHAR(255), age INTEGER(10), phone INTEGER(10))")
+dataBase.commit()
 
 cursor_object.execute("SHOW TABLES")
 for db in cursor_object:
     print(db)
->>>>>>> updated code
 '''
 ('teachers',)
 '''
